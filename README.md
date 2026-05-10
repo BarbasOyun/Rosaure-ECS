@@ -1,6 +1,7 @@
 # Rosaure ECS
 
 -Custom ECS written in C# for Unity<br>
+-[Original repo with the full Unity Project](https://github.com/BarbasOyun/ClassShmup)<br>
 -WIP<br>
 -Next Performance Update : Use GPU Instancing + Custom physic to replace Unity's GameObjects<br>
 
@@ -26,7 +27,6 @@
 
 ## Battleship Vs Space Armada
 
-[Web Version]()<br>
-[Download in release section]()<br>
+[Web Version](https://barbasoyun.github.io/Rosaure-ECS/)<br>
 -Technical Demo game for Rosaure ECS<br>
 -Implement Rosaure in EnemyManager and ProjectileManager<br>
