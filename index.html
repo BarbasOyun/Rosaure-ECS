@@ -9,7 +9,8 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" tabindex="-1"></canvas>
+      <!-- width=1920 height=1080 -->
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -17,11 +18,11 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
+      <!-- <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Class-Shmup</div>
-      </div>
+      </div> -->
     </div>
     <script>
       var canvas = document.querySelector("#unity-canvas");
@@ -52,12 +53,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/GigaWebBuild.loader.js";
+      var loaderUrl = buildUrl + "/GigaBuild.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/GigaWebBuild.data.br",
-        frameworkUrl: buildUrl + "/GigaWebBuild.framework.js.br",
-        codeUrl: buildUrl + "/GigaWebBuild.wasm.br",
+        dataUrl: buildUrl + "/GigaBuild.data.unityweb",
+        frameworkUrl: buildUrl + "/GigaBuild.framework.js.unityweb",
+        codeUrl: buildUrl + "/GigaBuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Class-Shmup",
@@ -104,8 +105,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        // canvas.style.width = "1920px";
+        // canvas.style.height = "1080px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
@@ -117,9 +118,9 @@
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
                 document.querySelector("#unity-loading-bar").style.display = "none";
-                document.querySelector("#unity-fullscreen-button").onclick = () => {
-                  unityInstance.SetFullscreen(1);
-                };
+                // document.querySelector("#unity-fullscreen-button").onclick = () => {
+                //   unityInstance.SetFullscreen(1);
+                // };
 
               }).catch((message) => {
                 alert(message);
