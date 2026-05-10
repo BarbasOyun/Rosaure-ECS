@@ -27,6 +27,9 @@
 
 ## Battleship Vs Space Armada
 
-[Web Version](https://barbasoyun.github.io/Rosaure-ECS/)<br>
+-[On Itch.io](https://barbasdev.itch.io/battleship-vs-space-armada)<br>
+-[Gihub pages Web Version](https://barbasoyun.github.io/Rosaure-ECS/)<br>
 -Technical Demo game for Rosaure ECS<br>
 -Implement Rosaure in EnemyManager and ProjectileManager<br>
+<br>
+![Cover](BVSA.png)<br>
